@@ -34,11 +34,13 @@ export default function TopBar({ onLoginClick }) {
       )}
       <header className="top-bar">
         {/* Logo */}
-        <div className="top-bar-logo">
-          <div className="logo-badge">⚽</div>
-          <div>
-            <div className="logo-text">WCC 2026</div>
-            <span className="logo-sub">WORLD CUP WITH CHRIST</span>
+        <div className="top-bar-logo" style={{ alignItems: 'center', gap: '0.75rem' }}>
+          <img src="/assets/dbys-logo.png" alt="DBYS Logo" style={{ width: '40px', height: '40px', objectFit: 'contain', background: '#fff', borderRadius: '50%' }} />
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div className="logo-text" style={{ lineHeight: 1 }}>WCC 2026</div>
+            <div style={{ fontSize: '0.55rem', color: 'var(--cyan)', letterSpacing: '1px', marginTop: '2px', fontFamily: 'var(--font-mono)' }}>
+              POWERED BY DBYS_INP
+            </div>
           </div>
         </div>
 

@@ -45,10 +45,10 @@ export default function LoadingScreen({ onComplete }) {
       <div className="ea-content-wrapper">
         {/* Left Side: Logos */}
         <div className="ea-logo-section">
-          <div className="ea-circle-logo">
-            <div className="ea-circle-text">
-              <span>WCC</span>
-              <span className="ea-circle-sports">SPORTS</span>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: '1rem' }}>
+            <img src="/assets/dbys-logo.png" alt="DBYS Logo" style={{ width: '100px', height: '100px', objectFit: 'contain', background: '#fff', borderRadius: '50%', padding: '4px', border: '3px solid #000', outline: '2px solid #fff', outlineOffset: '-5px' }} />
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.6rem', fontWeight: 800, marginTop: '0.75rem', letterSpacing: '2px', color: '#000', textAlign: 'center', lineHeight: 1.4 }}>
+              POWERED BY<br/>DBYS_INP
             </div>
           </div>
           
