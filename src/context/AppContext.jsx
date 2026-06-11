@@ -148,8 +148,13 @@ export function AppProvider({ children }) {
         let hasNewMatches = false;
 
         mData.forEach(apiMatch => {
-          if (!mergedMatches.find(m => m.id === apiMatch.id)) {
+          const existing = mergedMatches.find(m => m.id === apiMatch.id);
+          if (!existing) {
             mergedMatches.push(apiMatch);
+            hasNewMatches = true;
+          } else if (existing.homeTeam !== apiMatch.homeTeam || existing.date !== apiMatch.date || existing.venue !== apiMatch.venue) {
+            // Update existing match if core details changed
+            Object.assign(existing, apiMatch);
             hasNewMatches = true;
           }
         });

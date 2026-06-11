@@ -248,6 +248,19 @@ export default function Dashboard({ onNavigate }) {
             </div>
           )}
         </div>
+
+        {/* WhatsApp Group QR */}
+        <div className="game-card" style={{ gridColumn: '1 / -1', display: 'flex', alignItems: 'center', gap: '3rem', background: 'linear-gradient(135deg, rgba(37,211,102,0.1) 0%, rgba(18,140,126,0.2) 100%)', border: '1px solid rgba(37,211,102,0.3)' }}>
+          <img src="/assets/whatsapp-qr.jpg" alt="WhatsApp QR Code" style={{ width: '180px', borderRadius: '16px', boxShadow: '0 15px 35px rgba(0,0,0,0.4)', border: '4px solid #fff' }} />
+          <div>
+            <div style={{ fontFamily: 'var(--font-heading)', fontSize: '2.5rem', lineHeight: 1.1, marginBottom: '0.75rem', color: '#25D366', textTransform: 'uppercase' }}>
+              Join the WCC 2026 WhatsApp Group
+            </div>
+            <div style={{ fontFamily: 'var(--font-ui)', fontSize: '1.1rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, maxWidth: '600px' }}>
+              Stay connected with the community! Scan this QR code using your phone's camera or WhatsApp to join the <strong>World Cup 2k26</strong> group for live updates, predictions banter, and daily faith reflections.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
