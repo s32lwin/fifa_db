@@ -194,7 +194,7 @@ export default function Dashboard({ onNavigate }) {
               <button className="card-link">VIEW CARDS →</button>
             </div>
             
-            <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flex: 1 }}>
+            <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flex: 1, flexWrap: 'wrap', justifyContent: 'center' }}>
               <PlayerImage src={me.image} name={me.name} size={90} />
               <div>
                 <div style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', lineHeight: 1 }}>{me.name}</div>
@@ -250,7 +250,7 @@ export default function Dashboard({ onNavigate }) {
         </div>
 
         {/* WhatsApp Group QR */}
-        <div className="game-card" style={{ gridColumn: '1 / -1', display: 'flex', alignItems: 'center', gap: '3rem', background: 'linear-gradient(135deg, rgba(37,211,102,0.1) 0%, rgba(18,140,126,0.2) 100%)', border: '1px solid rgba(37,211,102,0.3)' }}>
+        <div className="game-card" style={{ gridColumn: '1 / -1', display: 'flex', alignItems: 'center', gap: '3rem', flexWrap: 'wrap', justifyContent: 'center', background: 'linear-gradient(135deg, rgba(37,211,102,0.1) 0%, rgba(18,140,126,0.2) 100%)', border: '1px solid rgba(37,211,102,0.3)' }}>
           <img src="/assets/whatsapp-qr.jpg" alt="WhatsApp QR Code" style={{ width: '180px', borderRadius: '16px', boxShadow: '0 15px 35px rgba(0,0,0,0.4)', border: '4px solid #fff' }} />
           <div>
             <div style={{ fontFamily: 'var(--font-heading)', fontSize: '2.5rem', lineHeight: 1.1, marginBottom: '0.75rem', color: '#25D366', textTransform: 'uppercase' }}>
