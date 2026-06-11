@@ -30,7 +30,7 @@ export function AppProvider({ children }) {
   const [predictions, setPredictionsRaw] = useState(() => lsGet('wcc_predictions', {}));
   const [challenges, setChallengesRaw] = useState(() => lsGet('wcc_challenges', {}));
   const [announcement, setAnnouncementRaw] = useState(() => lsGet('wcc_announcement', '⚽ Welcome to World Cup with Christ 2026! Predictions lock 15 mins before kickoff. ✝️'));
-  const [simulatedTime, setSimulatedTime] = useState(new Date('2026-06-10T09:57:57+05:30'));
+  const [simulatedTime, setSimulatedTime] = useState(new Date());
   const [toast, setToast] = useState(null);
   const [synthActive, setSynthActive] = useState(false);
   const toastTimer = useRef(null);
